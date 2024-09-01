@@ -44,6 +44,26 @@ namespace ValidaColchetes
                 Console.WriteLine($"Resultado {contador}: {itemEntrada} Válido: {EntradaValida(itemEntrada)}");
             }
 
+            
+
+            // Exibe uma mensagem pedindo ao usuário que insira algo
+            Console.WriteLine("********************************");
+            Console.WriteLine("********************************");
+
+            Console.WriteLine("Olá, por favor insira sua sequência:");
+
+            // Lê a entrada do usuário e armazena na variável nome
+            string sequenciaUsuario = Console.ReadLine();
+
+            bool valido = EntradaValida(sequenciaUsuario );
+
+            string mensagem = valido ? "Válida" : "Inválida";
+            Console.WriteLine($"A sequência {sequenciaUsuario} é {mensagem}");
+
+            Console.WriteLine("********************************");
+            Console.WriteLine("********************************");
+
+            Console.WriteLine("Digite qualquer tecla para sair. Obrigado.");
             Console.ReadLine();
         }
 
